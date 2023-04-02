@@ -125,8 +125,8 @@
       }
       .gameBlock2 {
         position: relative;
-        width: 175px;
-        height: 175px;
+        width: 9rem;
+        height: 9rem;
         margin: 0px 5px 20px;
         transition: all 0.5s;
         transform-style: preserve-3d;
@@ -332,9 +332,8 @@
       .endGame {
         position: absolute;
         width: 100%;
-        height: 100%;
-        background: url(assets/background.jpg);
-        background-size: 100%, 100%;
+        background: url(assets/background.jpg) no-repeat center;
+        background-size: cover;
         z-index: 102000;
         display: flex;
         justify-content: center;
@@ -342,10 +341,10 @@
         flex-direction: column;
       }
       .div3 {
-        width: 1200px;
-        height: 200px;
+        width: 90%;
+        height: auto;
+        padding: 2.5rem 2rem;
         background-color: rgba(0, 0, 0, 0.658);
-        margin-top: -180px;
         border-radius: 30px;
       }
       .h3-1 {
@@ -407,6 +406,11 @@
           width: 9rem;
           height: 9rem;
         }
+        .gameBlock2 {
+          width: 7.8rem;
+          height: 7.8rem;
+          margin: 0.2rem;
+        }
       }
       @media only screen and (max-width: 800px) {
         .memoryGame3 {
@@ -427,6 +431,11 @@
         }
         .infoCountiner .name {
           width: 40%;
+        }
+        .gameBlock2 {
+          width: 6rem;
+          height: 6rem;
+          margin: 0.2rem;
         }
       }
       @media only screen and (max-width: 550px) {
@@ -457,6 +466,12 @@
         .infoCountiner .tries {
           font-size: 0.7rem;
         }
+        .gameBlock2 {
+          margin: 0.2rem;
+        }
+        .memoryGame2 {
+          width: 96%;
+        }
       }
       @media only screen and (max-width: 450px) {
         .memoryGame3 {
@@ -475,6 +490,12 @@
           overflow: visible;
           white-space: nowrap;
           width: 25%;
+        }
+        .gameBlock2 {
+          margin: 0.05rem;
+        }
+        .memoryGame2 {
+          width: 100%;
         }
       }
     </style>
